@@ -1,13 +1,26 @@
-import React from 'react'
+import React from 'react';
 
 function Header() {
   return (
-    <>
-      <header>
-        <h1>Helow World!</h1>
-      </header>
-    </>
-  )
+    <nav className="navbar fixed-top bg-body-tertiary">
+      <div className="container-fluid">
+        <ul className="navbar-nav mx-auto d-flex flex-row fs-4 fw-semibold">
+          <li className="nav-item">
+            <a className="nav-link" href="#">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">O Studio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Serviços & Tratamentos</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
 export default Header;
