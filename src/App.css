@@ -8,6 +8,16 @@
   --font-nav: "Playfair Display", sans-serif;
   --font-title: "Playfair Display", serif;
   --font-text: "Roboto", sans-serif;
+  --color-primary: #677db7;
+  --color-secondary: #454b66;
+  --color-tertiary: #463a35;
+  --color-quartenary: #1f170a;
+  --color-quinary: #ee96d8;
+  /*pink #EE96D8 */
+  /*light blue #677DB7 */
+  /*dark blue # 454B66 */
+  /*brown #463A35 */
+  /* dark gray #1F170A */
 }
 
 body {
@@ -25,6 +35,16 @@ body {
 nav .nav-link {
   font-family: var(--font-nav);
   font-weight: 500;
+}
+
+nav .nav-link:hover {
+  font-family: var(var(--color-primary));
+  font-weight: 500;
+  border-bottom: 3px solid lightgray;
+}
+
+nav a.active {
+  border-bottom: 3px solid var(--color-primary);
 }
 
 h1,
