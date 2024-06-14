@@ -11,11 +11,12 @@ nav .nav-link:hover {
 }
 
 nav a.active {
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid var(--color-secondary);
 }
 
 .navbar {
   text-decoration: none;
+  background-color: rgb(247, 247, 247);
 }
 
 nav .navbar-nav {
@@ -27,16 +28,13 @@ nav .navbar-nav {
   list-style: none;
 }
 
-
-
 header .navBtn {
   padding: 5px 15px;
   cursor: pointer;
   border: none;
   background-color: transparent;
   outline: none;
-  font-size: 1.8rem;
-  color: var(--color-tertiary);
+  font-size: 1.5rem;
   opacity: 0;
   visibility: hidden;
 }
@@ -62,6 +60,15 @@ header .navBtn {
 
   header .responsive_nav {
     transform: translateY(0);
+  }
+
+  .navbar {
+    background-color: var(--color-tertiary);
+  }
+
+  .navbar a {
+    color: var(--color-quartenary);
+
   }
 
   nav .navCloseBtn {

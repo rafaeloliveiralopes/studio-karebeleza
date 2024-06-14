@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 import "./Navbar.css";
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
 
   return (
     <header>
-      <nav className="navbar fixed-top bg-body-tertiary" ref={navRef}>
+      <nav className="navbar fixed-top" ref={navRef}>
         <ul className="navbar-nav mx-auto fs-4">
           <li className="nav-item mx-4 ms-4">
             <a className="nav-link active" href="#">
@@ -35,11 +36,11 @@ function Navbar() {
           </li>
         </ul>
         <button className="navBtn navCloseBtn" onClick={showNavbar}>
-          <FaTimes />
+          <AiOutlineClose />
         </button>
       </nav>
       <button className="navBtn" onClick={showNavbar}>
-        <FaBars />
+        <CiMenuFries />
       </button>
     </header>
   );
