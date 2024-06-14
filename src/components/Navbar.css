@@ -37,6 +37,9 @@ header .navBtn {
   font-size: 1.5rem;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,7 +71,6 @@ header .navBtn {
 
   .navbar a {
     color: var(--color-quartenary);
-
   }
 
   nav .navCloseBtn {
