@@ -1,6 +1,7 @@
 import React from "react";
+import { FaTimes } from "react-icons/fa";
 
-function Header() {
+function Navbar() {
   return (
     <nav className="navbar fixed-top bg-body-tertiary">
       <div className="container-fluid">
@@ -26,9 +27,12 @@ function Header() {
             </a>
           </li>
         </ul>
+        <button>
+          <FaTimes />
+        </button>
       </div>
     </nav>
   );
 }
 
-export default Header;
+export default Navbar;
