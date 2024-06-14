@@ -24,29 +24,6 @@ body {
   font-family: var(--font-text);
 }
 
-.navbar {
-  text-decoration: none;
-}
-
-.navbar li {
-  list-style: none;
-}
-
-nav .nav-link {
-  font-family: var(--font-nav);
-  font-weight: 500;
-}
-
-nav .nav-link:hover {
-  font-family: var(var(--color-primary));
-  font-weight: 500;
-  border-bottom: 3px solid lightgray;
-}
-
-nav a.active {
-  border-bottom: 3px solid var(--color-primary);
-}
-
 h1,
 h2,
 h3,

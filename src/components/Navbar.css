@@ -1,0 +1,82 @@
+/* Navbar.css */
+nav .nav-link {
+  font-family: var(--font-nav);
+  font-weight: 500;
+}
+
+nav .nav-link:hover {
+  font-family: var(--font-nav);
+  font-weight: 500;
+  border-bottom: 3px solid lightgray;
+}
+
+nav a.active {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.navbar {
+  text-decoration: none;
+}
+
+nav .navbar-nav {
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+
+
+header .navBtn {
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.8rem;
+  color: var(--color-tertiary);
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navBtn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: translateY(0);
+  }
+
+  nav .navCloseBtn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  nav .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+
+  nav .navbar-nav .nav-item {
+    margin: 0.2rem 0;
+  }
+}

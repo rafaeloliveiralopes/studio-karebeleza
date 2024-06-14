@@ -1,37 +1,47 @@
-import React from "react";
-import { FaTimes } from "react-icons/fa";
+import React, { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./Navbar.css";
 
 function Navbar() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
-    <nav className="navbar fixed-top bg-body-tertiary">
-      <div className="container-fluid">
-        <ul className="navbar-nav mx-auto d-flex flex-row fs-4 ">
-          <li className="nav-item mx-5">
+    <header>
+      <nav className="navbar fixed-top bg-body-tertiary" ref={navRef}>
+        <ul className="navbar-nav mx-auto fs-4">
+          <li className="nav-item mx-4 ms-4">
             <a className="nav-link active" href="#">
               Home
             </a>
           </li>
-          <li className="nav-item mx-5">
+          <li className="nav-item mx-4 ms-1">
             <a className="nav-link" href="#">
               O Studio
             </a>
           </li>
-          <li className="nav-item mx-5">
+          <li className="nav-item mx-4 ms-1">
             <a className="nav-link" href="#">
               Serviços & Tratamentos
             </a>
           </li>
-          <li className="nav-item mx-5">
+          <li className="nav-item mx-4 ms-1">
             <a className="nav-link" href="#">
               Contato
             </a>
           </li>
         </ul>
-        <button>
+        <button className="navBtn navCloseBtn" onClick={showNavbar}>
           <FaTimes />
         </button>
-      </div>
-    </nav>
+      </nav>
+      <button className="navBtn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
 }
 
