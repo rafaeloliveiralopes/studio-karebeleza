@@ -15,3 +15,52 @@
     overflow: hidden;
   }
 }
+
+/* Styles for slick-carousel */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  transform: translateY(-50%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px;
+  }
+
+  .slick-prev {
+    left: 1px;
+  }
+
+  .slick-next {
+    right: 1px;
+  }
+}

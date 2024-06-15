@@ -12,6 +12,7 @@ import womanRelaxingInSpa from "/src/assets/woman-irealexing-in-a-spar.png";
 
 const HomeSection = () => {
   const settings = {
+    arrows: true,
     dots: true,
     speed: 2500,
     slidesToShow: 1,
@@ -19,6 +20,7 @@ const HomeSection = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
+
   };
 
   return (
