@@ -34,12 +34,13 @@ header .navBtn {
   border: none;
   background-color: transparent;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: var(--color-quartenary);
   opacity: 0;
   visibility: hidden;
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  right: 0.9rem;
   z-index: 11;
 }
 
