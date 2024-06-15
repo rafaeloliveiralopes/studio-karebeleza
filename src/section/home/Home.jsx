@@ -26,19 +26,19 @@ const HomeSection = () => {
       <Slider {...settings}>
         <div className="carousel-image position-relative">
           <img src={brideHeroBackground} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
           <img src={salonBeautyImage} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
           <img src={womanAtSalonBeauty} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
           <img src={womanRelaxingInSpa} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
-          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
       </Slider>
     </div>
