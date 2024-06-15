@@ -16,6 +16,7 @@ nav a.active {
 .navbar {
   text-decoration: none;
   background-color: rgb(247, 247, 247);
+  z-index: 10;
 }
 
 nav .navbar-nav {
@@ -39,6 +40,7 @@ header .navBtn {
   position: absolute;
   top: 1rem;
   right: 2rem;
+  z-index: 11;
 }
 
 @media only screen and (max-width: 768px) {
@@ -59,6 +61,7 @@ header .navBtn {
     height: 100vh;
     transform: translateX(100vh);
     transition: transform 0.9s ease-in-out;
+    z-index: 10;
   }
 
   header .responsive_nav {
@@ -74,6 +77,7 @@ header .navBtn {
     position: absolute;
     top: 1rem;
     right: 2rem;
+    z-index: 11;
   }
 
   nav .navbar-nav {
