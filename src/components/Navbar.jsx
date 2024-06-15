@@ -1,13 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import "./Navbar.css";
 
 function Navbar() {
   const navRef = useRef();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const showNavbar = () => {
+  const toggleNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -35,13 +37,17 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        <button className="navBtn navCloseBtn" onClick={showNavbar}>
-          <AiOutlineClose />
-        </button>
+        {menuOpen && (
+          <button className="navBtn navCloseBtn" onClick={toggleNavbar}>
+            <AiOutlineClose />
+          </button>
+        )}
       </nav>
-      <button className="navBtn" onClick={showNavbar}>
-        <CiMenuFries />
-      </button>
+      {!menuOpen && (
+        <button className="navBtn" onClick={toggleNavbar}>
+          <CiMenuFries />
+        </button>
+      )}
     </header>
   );
 }

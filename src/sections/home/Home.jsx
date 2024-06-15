@@ -20,26 +20,41 @@ const HomeSection = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-
   };
 
   return (
     <div className="home-section">
       <Slider {...settings}>
         <div className="carousel-image position-relative">
-          <img src={brideHeroBackground} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
+          <img
+            src={brideHeroBackground}
+            alt=""
+            className="img-fluid w-100 h-100 object-fit-cover"
+          />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
-          <img src={salonBeautyImage} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
+          <img
+            src={salonBeautyImage}
+            alt=""
+            className="img-fluid w-100 h-100 object-fit-cover"
+          />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
-          <img src={womanAtSalonBeauty} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
+          <img
+            src={womanAtSalonBeauty}
+            alt=""
+            className="img-fluid w-100 h-100 object-fit-cover"
+          />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
         <div className="carousel-image position-relative">
-          <img src={womanRelaxingInSpa} alt="" className="img-fluid w-100 h-100 object-fit-cover" />
+          <img
+            src={womanRelaxingInSpa}
+            alt=""
+            className="img-fluid w-100 h-100 object-fit-cover"
+          />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         </div>
       </Slider>
