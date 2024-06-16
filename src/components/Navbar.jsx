@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
-import "./Navbar.css";
+import "./navbar.css";
 
 function Navbar() {
   const navRef = useRef();

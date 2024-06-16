@@ -1,11 +1,15 @@
 import React from "react";
+import "./about.css";
 
-function About() {
+const About = () => {
   return (
-    <div className="mb-5 pb-5 mt-0 pt-0">
-      <h1>Transformando Beleza e Bem-Estar em Experiências Memoráveis</h1>
-    </div>
+    <section className="about-section">
+      <div className="container">
+        <h1>SUA CASA DE BELEZA NO LEBLON!</h1>
+        <p>Aqui você encontra os melhores serviços de beleza.</p>
+      </div>
+    </section>
   );
-}
+};
 
 export default About;
