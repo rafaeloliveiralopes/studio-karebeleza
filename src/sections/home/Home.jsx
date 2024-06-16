@@ -28,34 +28,46 @@ const HomeSection = () => {
         <div className="carousel-image position-relative">
           <img
             src={brideHeroBackground}
-            alt=""
+            alt="Bride Hero Background"
             className="img-fluid w-100 h-100 object-fit-cover"
           />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+          <div className="carousel-text position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h1 className="text-white">BELEZA E SOFISTICAÇÃO</h1>
+          </div>
         </div>
         <div className="carousel-image position-relative">
           <img
             src={salonBeautyImage}
-            alt=""
+            alt="Salon Beauty Image"
             className="img-fluid w-100 h-100 object-fit-cover"
           />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+          <div className="carousel-text position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h1 className="text-white">CONHEÇA O NOSSO STUDIO</h1>
+          </div>
         </div>
         <div className="carousel-image position-relative">
           <img
             src={womanAtSalonBeauty}
-            alt=""
+            alt="Woman at Salon Beauty"
             className="img-fluid w-100 h-100 object-fit-cover"
           />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+          <div className="carousel-text position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h1 className="text-white">CUIDADO E ESTILO</h1>
+          </div>
         </div>
         <div className="carousel-image position-relative">
           <img
             src={womanRelaxingInSpa}
-            alt=""
+            alt="Woman Relaxing in Spa"
             className="img-fluid w-100 h-100 object-fit-cover"
           />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+          <div className="carousel-text position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h1 className="text-white">RELAXE E REVITALIZE</h1>
+          </div>
         </div>
       </Slider>
     </div>
