@@ -40,8 +40,8 @@ header .navBtn {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 1rem;
-  right: 0.9rem;
+  top: 0.5rem;
+  right: -0.2rem;
   z-index: 11;
 }
 
