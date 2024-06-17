@@ -77,3 +77,9 @@
     height: 40vh !important;
   }
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .carousel-image {
+    height: 66vh !important;
+  }
+}
