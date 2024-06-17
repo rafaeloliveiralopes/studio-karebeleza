@@ -24,10 +24,6 @@ nav .navbar-nav {
   align-items: center;
 }
 
-.navbar li {
-  list-style: none;
-}
-
 header .navBtn {
   padding: 5px 15px;
   cursor: pointer;
