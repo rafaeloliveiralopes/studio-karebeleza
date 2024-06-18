@@ -4,6 +4,7 @@ import About from "./sections/About/About";
 import Navbar from "./components/Navbar/Navbar";
 import OurServices from "./sections/OurServices/OurServices";
 import Testimony from "./sections/Testemony/Testemony";
+import Gallery from "./sections/Gallery/Gallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <OurServices />
       <Testimony />
+      <Gallery />
     </>
   );
 }
