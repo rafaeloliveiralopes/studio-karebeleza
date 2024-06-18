@@ -41,7 +41,7 @@ function Testemony() {
     },
     {
       name: "Fabiola Domingos",
-      time: "1 ano atrás",
+      time: "3 meses atrás",
       text: "Olá queria o email de vcs.",
       rating: 4
     },
@@ -68,28 +68,28 @@ function Testemony() {
   return (
     <section className="py-5">
       <div className="container">
-        <h2 className="text-start text-md-center mb-4 mx-3">O que nossos clientes falam de nós</h2>
+        <h2 className="text-center mb-4 mx-4">O que nossos clientes falam de nós</h2>
         <div className="text-center mb-4">
           <div className="font-weight-bold h4">Excelente</div>
+          <div className="text-warning h4 mb-0">
+            {renderStars(5)}
+          </div>
           <div className="d-flex justify-content-center align-items-center mb-2">
-            <div className="text-warning h4 mb-0">
-              {renderStars(5)}
-            </div>
-            <div className="text-muted ml-2">Com base em 157 avaliações</div>
+            <div className="text-muted ml-2">Com base em <strong>157 avaliações</strong></div>
           </div>
           <img src="/src/assets/icons/google-icon.png" alt="Google" className="mx-auto" style={{ height: '32px' }} />
         </div>
         <Slider {...settings}>
           {reviews.map((review, index) => (
-            <div key={index} className="p-3">
-              <div className="card border-0 shadow">
-                <div className="card-body">
+            <div key={index} className="p-3 d-flex">
+              <div className="card border-0 shadow flex-fill d-flex" style={{ minHeight: '200px', maxHeight: '300px' }}>
+                <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{review.name}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">{review.time}</h6>
                   <div className="text-warning">
                     {renderStars(review.rating)}
                   </div>
-                  <p className="card-text mt-2">{review.text}</p>
+                  <p className="card-text mt-2 flex-grow-1">{review.text}</p>
                 </div>
               </div>
             </div>
