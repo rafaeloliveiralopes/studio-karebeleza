@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import googleIcon from "../../assets/icons/google-icon.png";
+
 function Testemony() {
   const settings = {
     arrows: false,
@@ -80,7 +82,7 @@ function Testemony() {
             </div>
           </div>
           <img
-            src="/src/assets/icons/google-icon.png"
+            src={googleIcon}
             alt="Google"
             className="mx-auto"
             style={{ height: "32px" }}
