@@ -12,27 +12,45 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleNavLinkClick = () => {
+    if (menuOpen) {
+      toggleNavbar();
+    }
+  };
+
   return (
     <header>
       <nav className="navbar fixed-top" ref={navRef}>
         <ul className="navbar-nav mx-auto fs-4">
           <li className="nav-item mx-4 ms-4">
-            <a className="nav-link active" href="/">
+            <a
+              className="nav-link active"
+              href="/"
+              onClick={handleNavLinkClick}
+            >
               Home
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#about">
+            <a className="nav-link" href="#about" onClick={handleNavLinkClick}>
               O Studio
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#services">
+            <a
+              className="nav-link"
+              href="#services"
+              onClick={handleNavLinkClick}
+            >
               Serviços & Tratamentos
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#contact">
+            <a
+              className="nav-link"
+              href="#contact"
+              onClick={handleNavLinkClick}
+            >
               Contato
             </a>
           </li>
