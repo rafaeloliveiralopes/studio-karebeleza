@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <header>
       <nav className="navbar fixed-top" ref={navRef}>
-        <ul className="navbar-nav mx-auto fs-4">
+        <ul className="navbar-nav fs-4">
           <li className="nav-item mx-4 ms-4">
             <a
               className="nav-link active"
