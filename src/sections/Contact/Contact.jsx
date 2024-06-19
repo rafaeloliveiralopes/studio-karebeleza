@@ -1,14 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 
 import logo from '../../assets/logo-1.svg';
 
 function Contact() {
   return (
-    <section className="py-5 bg-secondary">
-      <div className="container">
+    <section className="py-5 bg-dark">
+      <div className="container  text-light">
         <div className="row">
           {/* First Column */}
           <div className="col-md-3 text-center">
@@ -16,7 +16,7 @@ function Contact() {
             <div className="social-icons">
               <FaFacebook className="mx-2" size={30} />
               <FaInstagram className="mx-2" size={30} />
-              <FaTwitter className="mx-2" size={30} />
+              <FaTiktok className="mx-2" size={30} />
               <FaWhatsapp className="mx-2" size={30} />
             </div>
           </div>
