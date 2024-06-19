@@ -12,7 +12,7 @@ function Contact() {
         <div className="row">
           {/* First Column */}
           <div className="col-md-3 text-center">
-            <img src={logo} alt="Logo" className="img-fluid mb-4" style={{ maxWidth: '180px' }} />
+            <img src={logo} alt="Logo" className="img-fluid mb-md-4" style={{ maxWidth: '180px' }} />
             <div className="social-icons">
               <FaFacebook className="mx-2" size={30} />
               <FaInstagram className="mx-2" size={30} />
