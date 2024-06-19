@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
@@ -18,16 +18,41 @@ function Navbar() {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav a");
+
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
       <nav className="navbar fixed-top" ref={navRef}>
         <ul className="navbar-nav fs-4">
           <li className="nav-item mx-4 ms-4">
-            <a
-              className="nav-link active"
-              href="/"
-              onClick={handleNavLinkClick}
-            >
+            <a className="nav-link" href="#home" onClick={handleNavLinkClick}>
               Home
             </a>
           </li>
@@ -37,29 +62,17 @@ function Navbar() {
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a
-              className="nav-link"
-              href="#services"
-              onClick={handleNavLinkClick}
-            >
+            <a className="nav-link" href="#services" onClick={handleNavLinkClick}>
               Serviços & Tratamentos
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a
-              className="nav-link"
-              href="#gallery"
-              onClick={handleNavLinkClick}
-            >
+            <a className="nav-link" href="#gallery" onClick={handleNavLinkClick}>
               Galeria
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a
-              className="nav-link"
-              href="#contact"
-              onClick={handleNavLinkClick}
-            >
+            <a className="nav-link" href="#contact" onClick={handleNavLinkClick}>
               Contato
             </a>
           </li>
