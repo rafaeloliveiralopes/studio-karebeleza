@@ -7,7 +7,7 @@ import logo from '../../assets/2.svg';
 
 function Contact() {
   return (
-    <section className="py-5 bg-dark">
+    <section id='contact' className="py-5 bg-dark">
       <div className="container  text-light">
         <div className="row">
           {/* First Column */}

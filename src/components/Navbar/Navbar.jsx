@@ -17,22 +17,22 @@ function Navbar() {
       <nav className="navbar fixed-top" ref={navRef}>
         <ul className="navbar-nav mx-auto fs-4">
           <li className="nav-item mx-4 ms-4">
-            <a className="nav-link active" href="#">
+            <a className="nav-link active" href="/">
               Home
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#about">
               O Studio
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#services">
               Serviços & Tratamentos
             </a>
           </li>
           <li className="nav-item mx-4 ms-1">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#contact">
               Contato
             </a>
           </li>
