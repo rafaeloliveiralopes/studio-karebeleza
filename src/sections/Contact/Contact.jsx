@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 
-import logo from '../../assets/logo-1.svg';
+import logo from '../../assets/2.svg';
 
 function Contact() {
   return (
@@ -12,7 +12,7 @@ function Contact() {
         <div className="row">
           {/* First Column */}
           <div className="col-md-3 text-center">
-            <img src={logo} alt="Logo" className="img-fluid mb-4" style={{ maxWidth: '150px' }} />
+            <img src={logo} alt="Logo" className="img-fluid mb-4" style={{ maxWidth: '180px' }} />
             <div className="social-icons">
               <FaFacebook className="mx-2" size={30} />
               <FaInstagram className="mx-2" size={30} />
