@@ -24,7 +24,7 @@ function Gallery() {
   ];
 
   return (
-    <section className="py-5">
+    <section id="gallery" className="py-5">
       <div className="container">
         <h2 className="text-center mb-4">Galeria</h2>
         <div className="row">

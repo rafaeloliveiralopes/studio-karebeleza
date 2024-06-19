@@ -48,6 +48,15 @@ function Navbar() {
           <li className="nav-item mx-4 ms-1">
             <a
               className="nav-link"
+              href="#gallery"
+              onClick={handleNavLinkClick}
+            >
+              Galeria
+            </a>
+          </li>
+          <li className="nav-item mx-4 ms-1">
+            <a
+              className="nav-link"
               href="#contact"
               onClick={handleNavLinkClick}
             >
