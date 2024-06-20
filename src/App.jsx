@@ -6,6 +6,7 @@ import OurServices from "./sections/OurServices/OurServices";
 import Testimony from "./sections/Testimony/Testimony";
 import Gallery from "./sections/Gallery/Gallery";
 import Contact from "./sections/Contact/Contact";
+import WhatsAppWidget from "./components/WhatsAppWidget/WhatsAppWidget";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
+      <WhatsAppWidget />
     </>
   );
 }
