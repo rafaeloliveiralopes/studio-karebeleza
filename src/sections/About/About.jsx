@@ -3,8 +3,8 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section id="about" className="about-section">
-      <div className="container">
+    <section id="about" className="about-section  bg-primary-subtle">
+      <div className="container py-3 py-md-5">
         <h2>Transformando Beleza em Experiência</h2>
         <p>
           Aenean placerat. In vulputate urna eu arcu. Aliquam erat volutpat.
