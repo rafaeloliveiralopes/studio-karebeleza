@@ -7,6 +7,7 @@ import Testimony from "./sections/Testimony/Testimony";
 import Gallery from "./sections/Gallery/Gallery";
 import Contact from "./sections/Contact/Contact";
 import WhatsAppWidget from "./components/WhatsAppWidget/WhatsAppWidget";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Contact />
       </section>
       <WhatsAppWidget />
+      <Footer />
     </>
   );
 }
