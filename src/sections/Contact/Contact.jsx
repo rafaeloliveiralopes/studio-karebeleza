@@ -6,18 +6,28 @@ import "./Contact.css";
 import logo from "../../assets/2.svg";
 
 function Contact() {
+  const scrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section id="contact" className="py-5 bg-dark">
       <div className="container  text-light">
         <div className="row">
           {/* First Column */}
           <div className="col-md-3 text-center">
-            <img
-              src={logo}
-              alt="Logo"
-              className="img-fluid"
-              style={{ width: "280px" }}
-            />
+            <a href="/" onClick={scrollToTop}>
+              <img
+                src={logo}
+                alt="Logo"
+                className="img-fluid"
+                style={{ width: "280px" }}
+              />
+            </a>
           </div>
           {/* Second Column */}
           <div className="col-md-3 py-2">
