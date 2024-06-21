@@ -3,6 +3,8 @@ import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import "./navbar.css";
 
+import logo from "../../assets/1.svg";
+
 function Navbar() {
   const navRef = useRef();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +52,16 @@ function Navbar() {
   return (
     <header>
       <nav className="navbar fixed-top" ref={navRef}>
+        <div>
+          <a href="/">
+            <img
+              src={logo}
+              alt="Logo"
+              className="img-fluid mx-3"
+              style={{ width: "90px" }}
+            />
+          </a>
+        </div>
         <ul className="navbar-nav fs-4">
           <li className="nav-item mx-4 ms-4">
             <a className="nav-link" href="#home" onClick={handleNavLinkClick}>
