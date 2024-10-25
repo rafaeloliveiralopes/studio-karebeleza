@@ -1,8 +1,6 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import "./Contact.css";
-
 import logo from "../../assets/2.svg";
 
 function Contact() {
